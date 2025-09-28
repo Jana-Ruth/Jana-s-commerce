@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import fetchCategoryWiseProduct from "../../helpers/fetchCategoryWiseProduct";
 import displayUSDCurrency from "../../helpers/displayCurrency";
-import displayNGNCurrency from "../../helpers/displayNGNCurrency";
+import displayNGNCurrency from '@/helpers/displayNGNCurrency'; // if you use aliases
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import addToCart from "../../helpers/addToCart";

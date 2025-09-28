@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Context from "../../context";
 import addToCart from "../../helpers/addToCart";
 import displayUSDCurrency from "../../helpers/displayCurrency";
-import displayNGNCurrency from "../../helpers/displayNGNCurrency";
+import displayNGNCurrency from '@/helpers/displayNGNCurrency'; // if you use aliases
+
 
 const VerticalCard = ({ loading, data = [] }) => {
   const loadingList = new Array(13).fill(null);
