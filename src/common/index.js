@@ -1,173 +1,173 @@
 
 
-const backendDomain= process.env.REACT_APP_BACKEND_URL 
+const backendDomain = process.env.REACT_APP_BACKEND_URL 
 
 const SummaryApi = {
     SignUp : {
-        url : `https://fadqus-backend.onrender.com/api/signup`,
+        url : `https://jana-s-backend-faty.vercel.app//api/signup`,
         method : "post"
     },
     SignIn : {
-        url : `https://fadqus-backend.onrender.com/api/signin`,
+        url : `https://jana-s-backend-faty.vercel.app//api/signin`,
         method : "post"
     },
 
     current_user : {
-        url : `https://fadqus-backend.onrender.com/api/user-details`,
+        url : `https://jana-s-backend-faty.vercel.app//api/user-details`,
         method : "get"
     },
 
     logout_user : {
-        url : `https://fadqus-backend.onrender.com/api/userLogout`,
+        url : `https://jana-s-backend-faty.vercel.app//api/userLogout`,
         method : "get"
     },
 
     allUser : {
-        url : `https://fadqus-backend.onrender.com/api/all-user`,
+        url : `https://jana-s-backend-faty.vercel.app//api/all-user`,
         method : "get"
     },
     updateUser : {
-        url : `https://fadqus-backend.onrender.com/api/update-user`,
+        url : `https://jana-s-backend-faty.vercel.app//api/update-user`,
         method : "post"
     },
     searchUserInfo : {
-        url : `https://fadqus-backend.onrender.com/api/search-user`,
+        url : `https://jana-s-backend-faty.vercel.app//api/search-user`,
         method : "post"
     },
     updatePassword : {
-        url : `https://fadqus-backend.onrender.com/api/update-password`,
+        url : `https://jana-s-backend-faty.vercel.app//api/update-password`,
         method : 'put'
     },
     forgot_password : {
-        url : `https://fadqus-backend.onrender.com/api/forgot-password`,
+        url : `https://jana-s-backend-faty.vercel.app//api/forgot-password`,
         method : 'put'
     },
     forgot_password_otp_verification : {
-        url : `https://fadqus-backend.onrender.com/api/verify-forgot-password-otp`,
+        url : `https://jana-s-backend-faty.vercel.app//api/verify-forgot-password-otp`,
         method : 'put'
     },
     reset_password : {
-        url : `https://fadqus-backend.onrender.com/api/reset-password`,
+        url : `https://jana-s-backend-faty.vercel.app//api/reset-password`,
         method : "put"
     },
 
     deleteUser : {
-        url : `https://fadqus-backend.onrender.com/api/delete-user`,
+        url : `https://jana-s-backend-faty.vercel.app//api/delete-user`,
         method : 'delete'
     },
 
     getUserById : {
-        url : `https://fadqus-backend.onrender.com/api/user/:userId`,
+        url : `https://jana-s-backend-faty.vercel.app//api/user/:userId`,
         method : "get"
     },
 
     uploadProduct : {
-        url : `https://fadqus-backend.onrender.com/api/upload-product`,
+        url : `https://jana-s-backend-faty.vercel.app//api/upload-product`,
         method : "post"
     },
 
     allProduct : {
-        url : `https://fadqus-backend.onrender.com/api/get-product`,
+        url : `https://jana-s-backend-faty.vercel.app//api/get-product`,
         method : 'get'
     },
 
     updateProduct : {
-        url : `https://fadqus-backend.onrender.com/api/update-product`,
+        url : `https://jana-s-backend-faty.vercel.app//api/update-product`,
         method : 'post'
     },
 
     deleteProduct : {
-        url : `https://fadqus-backend.onrender.com/api/delete-product/`,
+        url : `https://jana-s-backend-faty.vercel.app//api/delete-product/`,
         method : 'delete'
     },
 
     categoryProduct : {
-        url :  `https://fadqus-backend.onrender.com/api/get-CategoryProduct`,
+        url :  `https://jana-s-backend-faty.vercel.app//api/get-CategoryProduct`,
         method : 'get'
     },
 
     categoryWiseProduct : {
-        url : `https://fadqus-backend.onrender.com/api/category-product`,
+        url : `https://jana-s-backend-faty.vercel.app//api/category-product`,
         method : 'post'
     },
 
     productDetails : {
-        url : `https://fadqus-backend.onrender.com/api/product-details`,
+        url : `https://jana-s-backend-faty.vercel.app//api/product-details`,
         method : 'post'
     },
 
     addToCartToProduct : {
-        url : `https://fadqus-backend.onrender.com/api/addtocart`,
+        url : `https://jana-s-backend-faty.vercel.app//api/addtocart`,
         method : 'post'
     },
     addToCartProductCount : {
-        url : `https://fadqus-backend.onrender.com/api/countAddToCartProduct`,
+        url : `https://jana-s-backend-faty.vercel.app//api/countAddToCartProduct`,
         method : 'get'
     },
     addToCartProductView : {
-        url : `https://fadqus-backend.onrender.com/api/view-card-product`,
+        url : `https://jana-s-backend-faty.vercel.app//api/view-card-product`,
         method : 'get'
     },
 
     updateCartProduct : {
-        url : `https://fadqus-backend.onrender.com/api/update-cart-product`,
+        url : `https://jana-s-backend-faty.vercel.app//api/update-cart-product`,
         method : 'post'
     },
 
     deleteCartProduct : {
-        url : `https://fadqus-backend.onrender.com/api/delete-cart-product`,
+        url : `https://jana-s-backend-faty.vercel.app//api/delete-cart-product`,
         method : 'post'
     },
     searchProduct : {
-        url : `https://fadqus-backend.onrender.com/api/search`,
+        url : `https://jana-s-backend-faty.vercel.app//api/search`,
         method : 'get'
     },
 
     filterProduct : {
-        url : `https://fadqus-backend.onrender.com/api/filter-product`,
+        url : `https://jana-s-backend-faty.vercel.app//api/filter-product`,
         method : 'post'
     },
     payment : {
-        url : `https://fadqus-backend.onrender.com/api/checkout`,
+        url : `https://jana-s-backend-faty.vercel.app//api/checkout`,
         method : 'post'
     },
     getOrder : {
-        url : `https://fadqus-backend.onrender.com/api/order-list`,
+        url : `https://jana-s-backend-faty.vercel.app//api/order-list`,
         method : 'get'
     },
     allOrder : {
-        url : `https://fadqus-backend.onrender.com/api/all-order`,
+        url : `https://jana-s-backend-faty.vercel.app//api/all-order`,
         method : 'get'
     },
 
     addAddress: {
-        url: `https://fadqus-backend.onrender.com/api/add-address`,
+        url: `https://jana-s-backend-faty.vercel.app//api/add-address`,
         method: 'post'
     },
     allAddress: {
-        url: `https://fadqus-backend.onrender.com/api/all-address`, // This fetches all addresses without needing a userId in the URL
+        url: `https://jana-s-backend-faty.vercel.app//api/all-address`, // This fetches all addresses without needing a userId in the URL
         method: 'get'
     },
     updateAddress: {
-        url: `https://fadqus-backend.onrender.com/api/update-address`, // For updating a specific address
+        url: `https://jana-s-backend-faty.vercel.app//api/update-address`, // For updating a specific address
         method: 'put'
     },
     deleteAddress: {
-        url: `https://fadqus-backend.onrender.com/api/delete-address`, // For deleting a specific address
+        url: `https://jana-s-backend-faty.vercel.app//api/delete-address`, // For deleting a specific address
         method: 'delete'
     },
 
     addReview : {
-        url : `https://fadqus-backend.onrender.com/api/add-review`,
+        url : `https://jana-s-backend-faty.vercel.app//api/add-review`,
         method : 'post'
     },
 
     allReview : {
-        url : `https://fadqus-backend.onrender.com/api/all-review`,
+        url : `https://jana-s-backend-faty.vercel.app//api/all-review`,
         method : 'get'
     },
     allReviewProductBased : {
-        url : `https://fadqus-backend.onrender.com/api/:productId`,
+        url : `https://jana-s-backend-faty.vercel.app//api/:productId`,
         method : 'get'
     }
 
