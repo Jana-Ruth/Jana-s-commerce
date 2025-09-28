@@ -1,173 +1,173 @@
 
 
-const backendDomain = process.env.REACT_APP_BACKEND_URL 
+const backendDomain= process.env.REACT_APP_BACKEND_URL 
 
 const SummaryApi = {
     SignUp : {
-        url : `backendDomain/api/signup`,
+        url : `https://fadqus-backend.onrender.com/api/signup`,
         method : "post"
     },
     SignIn : {
-        url : `backendDomain/api/signin`,
+        url : `https://fadqus-backend.onrender.com/api/signin`,
         method : "post"
     },
 
     current_user : {
-        url : `backendDomain/api/user-details`,
+        url : `https://fadqus-backend.onrender.com/api/user-details`,
         method : "get"
     },
 
     logout_user : {
-        url : `backendDomain/api/userLogout`,
+        url : `https://fadqus-backend.onrender.com/api/userLogout`,
         method : "get"
     },
 
     allUser : {
-        url : `backendDomain/api/all-user`,
+        url : `https://fadqus-backend.onrender.com/api/all-user`,
         method : "get"
     },
     updateUser : {
-        url : `backendDomain/api/update-user`,
+        url : `https://fadqus-backend.onrender.com/api/update-user`,
         method : "post"
     },
     searchUserInfo : {
-        url : `backendDomain/api/search-user`,
+        url : `https://fadqus-backend.onrender.com/api/search-user`,
         method : "post"
     },
     updatePassword : {
-        url : `backendDomain/api/update-password`,
+        url : `https://fadqus-backend.onrender.com/api/update-password`,
         method : 'put'
     },
     forgot_password : {
-        url : `backendDomain/api/forgot-password`,
+        url : `https://fadqus-backend.onrender.com/api/forgot-password`,
         method : 'put'
     },
     forgot_password_otp_verification : {
-        url : `backendDomain/api/verify-forgot-password-otp`,
+        url : `https://fadqus-backend.onrender.com/api/verify-forgot-password-otp`,
         method : 'put'
     },
     reset_password : {
-        url : `backendDomain/api/reset-password`,
+        url : `https://fadqus-backend.onrender.com/api/reset-password`,
         method : "put"
     },
 
     deleteUser : {
-        url : `backendDomain/api/delete-user`,
+        url : `https://fadqus-backend.onrender.com/api/delete-user`,
         method : 'delete'
     },
 
     getUserById : {
-        url : `backendDomain/api/user/:userId`,
+        url : `https://fadqus-backend.onrender.com/api/user/:userId`,
         method : "get"
     },
 
     uploadProduct : {
-        url : `backendDomain/api/upload-product`,
+        url : `https://fadqus-backend.onrender.com/api/upload-product`,
         method : "post"
     },
 
     allProduct : {
-        url : `backendDomain/api/get-product`,
+        url : `https://fadqus-backend.onrender.com/api/get-product`,
         method : 'get'
     },
 
     updateProduct : {
-        url : `backendDomain/api/update-product`,
+        url : `https://fadqus-backend.onrender.com/api/update-product`,
         method : 'post'
     },
 
     deleteProduct : {
-        url : `backendDomain/api/delete-product/`,
+        url : `https://fadqus-backend.onrender.com/api/delete-product/`,
         method : 'delete'
     },
 
     categoryProduct : {
-        url :  `backendDomain/api/get-CategoryProduct`,
+        url :  `https://fadqus-backend.onrender.com/api/get-CategoryProduct`,
         method : 'get'
     },
 
     categoryWiseProduct : {
-        url : `backendDomain/api/category-product`,
+        url : `https://fadqus-backend.onrender.com/api/category-product`,
         method : 'post'
     },
 
     productDetails : {
-        url : `backendDomain/api/product-details`,
+        url : `https://fadqus-backend.onrender.com/api/product-details`,
         method : 'post'
     },
 
     addToCartToProduct : {
-        url : `backendDomain/api/addtocart`,
+        url : `https://fadqus-backend.onrender.com/api/addtocart`,
         method : 'post'
     },
     addToCartProductCount : {
-        url : `backendDomain/api/countAddToCartProduct`,
+        url : `https://fadqus-backend.onrender.com/api/countAddToCartProduct`,
         method : 'get'
     },
     addToCartProductView : {
-        url : `backendDomain/api/view-card-product`,
+        url : `https://fadqus-backend.onrender.com/api/view-card-product`,
         method : 'get'
     },
 
     updateCartProduct : {
-        url : `backendDomain/api/update-cart-product`,
+        url : `https://fadqus-backend.onrender.com/api/update-cart-product`,
         method : 'post'
     },
 
     deleteCartProduct : {
-        url : `backendDomain/api/delete-cart-product`,
+        url : `https://fadqus-backend.onrender.com/api/delete-cart-product`,
         method : 'post'
     },
     searchProduct : {
-        url : `backendDomain/api/search`,
+        url : `https://fadqus-backend.onrender.com/api/search`,
         method : 'get'
     },
 
     filterProduct : {
-        url : `backendDomain/api/filter-product`,
+        url : `https://fadqus-backend.onrender.com/api/filter-product`,
         method : 'post'
     },
     payment : {
-        url : `backendDomain/api/checkout`,
+        url : `https://fadqus-backend.onrender.com/api/checkout`,
         method : 'post'
     },
     getOrder : {
-        url : `backendDomain/api/order-list`,
+        url : `https://fadqus-backend.onrender.com/api/order-list`,
         method : 'get'
     },
     allOrder : {
-        url : `backendDomain/api/all-order`,
+        url : `https://fadqus-backend.onrender.com/api/all-order`,
         method : 'get'
     },
 
     addAddress: {
-        url: `backendDomain/api/add-address`,
+        url: `https://fadqus-backend.onrender.com/api/add-address`,
         method: 'post'
     },
     allAddress: {
-        url: `backendDomain/api/all-address`, // This fetches all addresses without needing a userId in the URL
+        url: `https://fadqus-backend.onrender.com/api/all-address`, // This fetches all addresses without needing a userId in the URL
         method: 'get'
     },
     updateAddress: {
-        url: `backendDomain/api/update-address`, // For updating a specific address
+        url: `https://fadqus-backend.onrender.com/api/update-address`, // For updating a specific address
         method: 'put'
     },
     deleteAddress: {
-        url: `backendDomain/api/delete-address`, // For deleting a specific address
+        url: `https://fadqus-backend.onrender.com/api/delete-address`, // For deleting a specific address
         method: 'delete'
     },
 
     addReview : {
-        url : `backendDomain/api/add-review`,
+        url : `https://fadqus-backend.onrender.com/api/add-review`,
         method : 'post'
     },
 
     allReview : {
-        url : `backendDomain/api/all-review`,
+        url : `https://fadqus-backend.onrender.com/api/all-review`,
         method : 'get'
     },
     allReviewProductBased : {
-        url : `backendDomain/api/:productId`,
+        url : `https://fadqus-backend.onrender.com/api/:productId`,
         method : 'get'
     }
 
