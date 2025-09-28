@@ -1,6 +1,8 @@
+
 import React, { useContext, useEffect, useRef, useState } from "react";
 import fetchCategoryWiseProduct from "../../helpers/fetchCategoryWiseProduct";
 import displayUSDCurrency from "../../helpers/displayCurrency";
+import displayNGNCurrency from "../../helpers/displayNGNCurrency"; // Import NGN currency helper
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import addToCart from "../../helpers/addToCart";
@@ -42,7 +44,7 @@ const VerticalCardProduct = ({ category, heading }) => {
   };
 
   return (
-    <div className="container mx-auto px-4 my-6 relative">
+    <div className="mx-6 md:mx-14 my-6 relative">
       <h2 className="text-2xl font-semibold py-4">{heading}</h2>
 
       <div
@@ -98,14 +100,15 @@ const VerticalCardProduct = ({ category, heading }) => {
                     <p className="capitalize text-slate-500">
                       {product?.category}
                     </p>
-                    <div className="flex gap-3">
-                      <p className="text-blue-600 font-medium">
-                        {displayUSDCurrency(product?.sellingPrice)}
-                      </p>
-                      <p className="text-slate-500 line-through">
-                        {displayUSDCurrency(product?.price)}
-                      </p>
-                    </div>
+                   {/* Prices (Now includes NGN) */}
+                   <div className="flex flex-col text-sm">
+                     <p className="text-blue-600 font-medium">
+                       USD: {displayUSDCurrency(product?.sellingPrice)} | NGN: {displayNGNCurrency(product?.sellingPrice)}
+                     </p>
+                     <p className="text-slate-500 line-through">
+                       USD: {displayUSDCurrency(product?.price)} | NGN: {displayNGNCurrency(product?.price)}
+                     </p>
+                   </div>
                     <button
                       className="
                     text-sm 

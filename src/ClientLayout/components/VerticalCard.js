@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Context from "../../context";
 import addToCart from "../../helpers/addToCart";
 import displayUSDCurrency from "../../helpers/displayCurrency";
+import displayNGNCurrency from "../../helpers/displayNGNCurrency"; // Import NGN currency helper
 
 const VerticalCard = ({ loading, data = [] }) => {
   const loadingList = new Array(13).fill(null);
@@ -53,14 +54,15 @@ const VerticalCard = ({ loading, data = [] }) => {
                   <p className="capitalize text-slate-500">
                     {product?.category}
                   </p>
-                  <div className="flex gap-3">
-                    <p className="text-blue-600 font-medium">
-                      {displayUSDCurrency(product?.sellingPrice)}
-                    </p>
-                    <p className="text-slate-500 line-through">
-                      {displayUSDCurrency(product?.price)}
-                    </p>
-                  </div>
+                  {/* Prices (Now includes NGN) */}
+                   <div className="flex flex-col text-sm">
+                     <p className="text-blue-600 font-medium">
+                       USD: {displayUSDCurrency(product?.sellingPrice)} | NGN: {displayNGNCurrency(product?.sellingPrice)}
+                     </p>
+                     <p className="text-slate-500 line-through">
+                       USD: {displayUSDCurrency(product?.price)} | NGN: {displayNGNCurrency(product?.price)}
+                     </p>
+                   </div>
                   <button
                     className="
                     text-sm 
