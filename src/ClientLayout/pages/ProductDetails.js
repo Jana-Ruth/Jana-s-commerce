@@ -319,11 +319,7 @@ const ProductDetails = () => {
                     </div>
                   </div>
                 )}
-                 {/* video display */}
-                 <video controls width="400">
-                          <source src={"https://www.youtube.com/watch?v=aQFUAllyo8w&list=PPSV"} type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
+                
 
                 {showWriteReview && (
                   <div className="mt-2">

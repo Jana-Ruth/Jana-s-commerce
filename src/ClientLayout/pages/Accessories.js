@@ -11,17 +11,17 @@ const Accessories = () => {
       <BannerProduct/>
 
   
+      <HorizontalCardProduct category = {"consolebags"} heading={"Popular's Console Bags"}/>
       <HorizontalCardProduct category = {"watches"} heading={"Popular's Watches"}/>
-      <HorizontalCardProduct category = {"earphones"} heading={"Popular's Earphones"}/>
 
-      <VerticalCardProduct category = {"mobiles"} heading={"Mobiles"}/>
+      <VerticalCardProduct category = {"laptops"} heading={"Laptops"}/>
 
-      <VerticalCardProduct category={"mouse"} heading={"Mouse"}/>
-      <VerticalCardProduct category={"televisions"} heading={"Televisions"}/>
-      <VerticalCardProduct category={"camera"} heading={"Camera & Photography"}/>
-      <VerticalCardProduct category={"speakers"} heading={"Bluetooth Speakers"}/>
-      <VerticalCardProduct category={"refrigerator"} heading={"Refrigerator"}/>
-      <VerticalCardProduct category={"trimmers"} heading={"Trimmers"}/>
+      <VerticalCardProduct category={"controllers"} heading={"Controllers"}/>
+      <VerticalCardProduct category={"giftcards"} heading={"Gift Cards"}/>
+      <VerticalCardProduct category={"airpods"} heading={"Airpods"}/>
+      <VerticalCardProduct category={"nintendos"} heading={"Nintendos"}/>
+      <VerticalCardProduct category={"xbox"} heading={"Xbox"}/>
+      <VerticalCardProduct category={"videogames"} heading={"Video Games"}/>
     </div>
   )
 }
